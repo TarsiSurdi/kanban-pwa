@@ -17,7 +17,7 @@ export default defineConfig({
         name: "Kanban",
         short_name: "Kanban",
         description: "Kanban PWA using Vite.js",
-        theme_color: "#696773",
+        theme_color: "#2D2D33",
         icons: [
           {
             src: "icons/icon.png",

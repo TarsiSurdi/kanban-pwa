@@ -43,7 +43,7 @@ export default defineConfig({
       },
       {
         find: "@public",
-        replacement: fileURLToPath(new URL("./", import.meta.url)),
+        replacement: fileURLToPath(new URL(".", import.meta.url)),
       },
     ],
   },

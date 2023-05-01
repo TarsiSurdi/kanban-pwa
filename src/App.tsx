@@ -3,10 +3,12 @@ import { Main, Navbar } from "./components";
 
 function App() {
   return (
-    <div className="h-screen flex flex-col ">
+    <>
       <Navbar />
-      <Main />
-    </div>
+      <div className="h-screen flex flex-col overflow-x-scroll">
+        <Main />
+      </div>
+    </>
   );
 }
 

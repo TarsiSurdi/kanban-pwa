@@ -14,10 +14,11 @@ export function Navbar() {
           <FaChevronDown className="fill-primary min-w-fit" />
         </div>
         <div className="flex items-center">
-          <button className="bg-primary sm:px-4 sm:py-2 px-1 py-1 rounded-2xl mr-2 flex justify-center items-center">
-            <FaPlus className="fill-gray-200" />
+          <button className="bg-primary text-white font-bold sm:px-4 sm:py-2 px-1 py-1 rounded-2xl mr-2 flex justify-between items-center whitespace-nowrap">
+            <FaPlus className="fill-gray-200 md:mr-2" />
+            <p className="max-md:hidden">Add New Task</p>
           </button>
-          <BsThreeDotsVertical className="dark:fill-neutral-100" />
+          <BsThreeDotsVertical className="dark:fill-neutral-100 text-2xl" />
         </div>
       </div>
     </nav>

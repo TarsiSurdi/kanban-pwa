@@ -1,14 +1,15 @@
 import "./index.css";
-import { Main, Navbar } from "./components";
+import { Footer, Main, Navbar } from "./components";
 
 function App() {
   return (
     <>
       <div className="flex flex-col min-h-full">
         <Navbar />
-        <div className="overflow-x-auto">
+        <div className="flex flex-col overflow-x-auto flex-grow min-h-full">
           <Main />
         </div>
+        <Footer />
       </div>
     </>
   );

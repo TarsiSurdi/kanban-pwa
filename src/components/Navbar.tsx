@@ -7,7 +7,7 @@ export function Navbar() {
     <nav className="bg-neutral-400 select-none h-12 xs:h-16 px-2 xs:px-4 flex justify-between xs:text-base text-sm">
       <div className="flex flex-row items-center justify-start max-w-[3/4]">
         <Icon className="w-6 xs:w-8" />
-        <h2 className="dark:text-white text-md xs:text-xl font-semibold px-4 truncate">
+        <h2 className="dark:text-white text-md sm:text-xl font-semibold px-4 truncate">
           Platform Launch
         </h2>
         <FaChevronDown className="fill-primary" />

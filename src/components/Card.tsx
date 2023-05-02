@@ -21,16 +21,18 @@ export function Card({ title, variant = "normal" }: CardProps) {
     }
     case "add": {
       return (
-        <div className="dark:bg-neutral-400 dark:text-white p-4 rounded-md shadow-md min-h-[100px] w-[200px] gap-y-4 flex flex-col items-center">
-          <FaPlusSquare className="text-4xl text-neutral-100" />
-          <p className="text-sm text-neutral-100 font-semibold">
-            Adicionar Coluna
-          </p>
-        </div>
+        <section className="flex flex-col max-w-[80%] pl-4 last:mr-4 mt-12">
+          <div className="dark:bg-neutral-400 dark:hover:bg-neutral-300 transition-colors duration-150 ease-out dark:text-white p-4 rounded-md shadow-md min-h-[100px] w-[200px] gap-y-4 flex flex-col items-center group">
+            <FaPlusSquare className="text-4xl dark:text-neutral-100 dark:group-hover:text-neutral-50" />
+            <p className="text-sm font-semibold dark:text-neutral-100 dark:group-hover:text-neutral-50">
+              Adicionar Coluna
+            </p>
+          </div>
+        </section>
       );
     }
     default: {
-      throw new Error("No variant provided to <Card />");
+      throw new Error(`Invalid variant ${variant} provided to <Card />`);
     }
   }
 }

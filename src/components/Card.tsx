@@ -1,5 +1,4 @@
 import { FaPlusSquare } from "react-icons/fa";
-import { ReactNode } from "react";
 
 type CardVariants = "normal" | "add";
 

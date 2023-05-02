@@ -4,9 +4,11 @@ import { Main, Navbar } from "./components";
 function App() {
   return (
     <>
-      <Navbar />
-      <div className="h-screen flex flex-col overflow-x-scroll">
-        <Main />
+      <div className="flex flex-col min-h-full">
+        <Navbar />
+        <div className="overflow-x-scroll flex-grow">
+          <Main />
+        </div>
       </div>
     </>
   );

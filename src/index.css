@@ -6,7 +6,18 @@
   div#root {
     @apply h-full;
   }
+
+  body {
+    margin-left: env(safe-area-inset-left);
+    margin-right: env(safe-area-inset-right);
+  }
 }
 
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom), theme(spacing.2));
+  }
+}

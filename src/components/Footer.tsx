@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 
 export function Footer() {
   return (
-    <footer className="group flex md:absolute md:bottom-0 md:right-0 md:mr-safe md:mb-safe md:py-2 md:px-4 md:rounded-2xl md:shadow-lg justify-center items-center hover:underline text-neutral-100 dark:hover:text-white dark:bg-neutral-400 max-h-max text-sm pt-3 pb-safe">
+    <footer className="group flex md:absolute md:bottom-0 md:right-0 md:[margin-right:max(env(safe-area-inset-right),_theme(spacing.4))] md:[margin-bottom:max(env(safe-area-inset-bottom),_theme(spacing.4))] md:py-2 md:px-4 md:rounded-2xl md:shadow-lg justify-center items-center hover:underline text-neutral-100 dark:hover:text-white dark:bg-neutral-400 max-h-max text-sm pb-[max(env(safe-area-inset-bottom),_theme(spacing.2))] pt-2">
       <FaGithub className="dark:group-hover:text-white mr-2" />
       <a
         href="https://github.com/TarsiSurdi"

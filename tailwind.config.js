@@ -1,4 +1,5 @@
 import defaultTheme from "tailwindcss/defaultTheme";
+import tailwindcssSafeArea from "tailwindcss-safe-area";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -25,5 +26,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindcssSafeArea],
 };

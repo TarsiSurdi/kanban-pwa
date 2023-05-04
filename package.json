@@ -27,6 +27,7 @@
     "eslint-plugin-react-refresh": "^0.3.4",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2",
+    "tailwindcss-safe-area": "^0.2.2",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vite-plugin-pwa": "^0.14.7"

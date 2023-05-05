@@ -2,7 +2,7 @@ import { Card, CardColumn } from ".";
 
 export function Main() {
   return (
-    <main className="dark:bg-neutral-500 flex justify-start items-start w-max min-w-full overflow-x-auto flex-grow">
+    <main className="dark:bg-neutral-500 flex justify-start items-start w-max max-w-full lg:max-w-[75%] overflow-x-auto flex-grow">
       <CardColumn title="TODO" count={8} color="bg-green-400">
         <Card title="Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit" />
       </CardColumn>

@@ -6,7 +6,7 @@ function App() {
     <>
       <div className="flex flex-col min-h-full">
         <Navbar />
-        <div className="flex flex-col overflow-x-auto flex-grow min-h-full">
+        <div className="flex justify-center overflow-x-auto flex-grow min-h-full">
           <Main />
         </div>
         <Footer />

@@ -24,6 +24,15 @@ export default {
         xs: "300px",
         sm: "375px",
       },
+      animation: {
+        dropdown: "dropdown 0.25s ease-in",
+      },
+      keyframes: {
+        dropdown: {
+          "0%": { opacity: "0%", transform: "scale(0.8)" },
+          "100%": { opacity: "100%", transform: "scale(1)" },
+        },
+      },
     },
   },
   plugins: [tailwindcssSafeArea],

@@ -5,3 +5,4 @@ export { Card } from "./Card";
 export { CardColumn } from "./CardColumn";
 export { Footer } from "./Footer";
 export { NavbarOption } from "./NavbarOption";
+export { Overlay } from "./Overlay";

@@ -2,10 +2,17 @@ import { useState } from "react";
 import { FaChevronDown, FaPlus } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
-import { Icon, NavbarOption } from ".";
+import { Icon, NavbarOption, Overlay } from ".";
+import { createPortal } from "react-dom";
+import { TaskModal } from "./TaskModal";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
+  const [showModal, setShowModal] = useState(true);
+
+  function handleShowModal() {
+    setShowModal((prevState) => !prevState);
+  }
 
   function handleClick() {
     setIsOpen((prevState) => !prevState);
@@ -37,9 +44,19 @@ export function Navbar() {
         </div>
       </div>
       <div className="flex items-center">
-        <button className="bg-primary text-white font-bold sm:px-4 sm:py-2 px-1 py-1 rounded-2xl mr-2 flex justify-between items-center whitespace-nowrap">
+        <button
+          className="bg-primary text-white font-bold sm:px-4 sm:py-2 px-1 py-1 rounded-2xl mr-2 flex justify-between items-center whitespace-nowrap"
+          onClick={handleShowModal}
+        >
           <FaPlus className="fill-gray-200 md:mr-2" />
           <p className="max-md:hidden">Add New Task</p>
+          {showModal &&
+            createPortal(
+              <Overlay>
+                <TaskModal title="Teste" description="Testando né moreh..." />
+              </Overlay>,
+              document.getElementById("root") as HTMLElement
+            )}
         </button>
         <BsThreeDotsVertical className="dark:fill-neutral-100 text-2xl" />
       </div>

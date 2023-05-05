@@ -25,12 +25,12 @@ export default {
         sm: "375px",
       },
       animation: {
-        dropdown: "dropdown 0.25s ease-in",
+        dropdown: "dropdown 0.2s ease-in-out",
       },
       keyframes: {
         dropdown: {
-          "0%": { opacity: "0%", transform: "scale(0.8)" },
-          "100%": { opacity: "100%", transform: "scale(1)" },
+          "0%": { opacity: "0%", transform: "scale(0.8) scaleY(0.8)" },
+          "100%": { opacity: "100%", transform: "scale(1) scaleY(1)" },
         },
       },
     },

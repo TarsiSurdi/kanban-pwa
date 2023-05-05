@@ -27,7 +27,7 @@ export function Navbar() {
         <div
           className={`absolute ${
             isOpen ? "block" : "hidden"
-          } bg-zinc-800 z-10 min-w-[85%] top-full left-10 border border-gray-600 rounded-lg px-4 py-2 text-gray-400 font-semibold m-2 shadow-2xl animate-dropdown`}
+          } bg-zinc-800 z-10 min-w-[85%] top-full left-10 border border-gray-600 rounded-lg px-4 py-2 text-gray-400 font-semibold m-2 shadow-2xl animate-dropdown origin-top`}
         >
           <ul className="flex flex-col space-y-4">
             <NavbarOption title="Página 1" />
